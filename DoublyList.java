@@ -44,37 +44,7 @@ public class DoublyList
         }
         return head;
     }
-    
-//    public void insertbeg(int data)
-//    {
-//        Node l = new Node(data);
-//        if(head == null)
-//        {
-//            return;
-//        }
-//        else
-//        {
-//            head.prev = l;
-//            l.next = head;            
-//            head = l ;
-//        }
-//    }
-//    
-//    public void insertend(int data)
-//    {
-//        Node l = new Node(data);
-//        if(head == null)
-//        {
-//            return;
-//        }
-//        else
-//        {
-//            tail.next = l;
-//            l.prev = tail;
-//            tail = l;
-//        }
-//    }
-//    
+        
     public void Insert(Node a , int pos , int data)
         {
             Node new_node = new Node(data);
@@ -96,34 +66,6 @@ public class DoublyList
                 new_node.prev = temp;
             }
         }
-//    
-//    public void deletebeg(Node a)
-//    {
-//        if(a == null)
-//        {
-//            return;
-//        }
-//        else
-//        {
-//            Node temp = head.next;
-//            temp.prev = null;
-//            head = temp;
-//        }
-//    }
-//    
-//    public void deleteend(Node a)
-//    {
-//        if(a == null)
-//        {
-//            return;
-//        }
-//        else
-//        {
-//            Node temp = tail.prev;
-//            temp.next = null;
-//            tail = temp;
-//        }
-//    }
     
     public void delete(Node a , int pos)
         {
@@ -188,10 +130,6 @@ class Double
 			data = sc.nextInt();
 			a = m.add(data);
 		} 
-//                System.out.println("Enter data");
-//                data = sc.nextInt();
-//                m.insertend(data);  
-//                m.insertbeg(data);
                 System.out.println("LinkedList is: ");
                 m.display(a);
                 System.out.println("\n Enter the position");
@@ -201,8 +139,6 @@ class Double
                 m.Insert(a, pos , data);
                 System.out.println("LinkedList after adding is: ");
                 m.display(a);
-//                m.deletebeg(a);
-//                m.deleteend(a);
                 System.out.println("\n Enter the position to delete");
                 int p = sc.nextInt();
                 m.delete(a, p);
