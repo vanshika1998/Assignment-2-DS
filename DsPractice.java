@@ -60,37 +60,6 @@ class LinkedList
                 temp.next = new_node;                
             }
         }
-//        
-//        public void deletebeg(Node a)
-//        {
-//            if(head == null)
-//            {
-//                return;
-//            }
-//            else
-//            {
-//                Node temp = head;
-//                head = temp.next;
-//                temp.next = null;
-//            }            
-//        }
-//        
-//        public void deleteend(Node a)
-//        {
-//            if(head == null)
-//            {
-//                return;
-//            }
-//            else
-//            {
-//                Node temp = head;
-//                while(temp.next.next != null)
-//                {
-//                    temp = temp.next;
-//                }
-//                temp.next=null;
-//            }            
-//        }
         
         public void delete(Node a , int pos)
         {
@@ -148,8 +117,6 @@ public class DsPractice
                 System.out.println("Enter data");
                 data = sc.nextInt();
                 m.Insert(a, pos , data);
-//                m.deletebeg(a);
-//                m.deleteend(a);
                 System.out.println("Enter the position to delete");
                 int p = sc.nextInt();
                 m.delete(a, p);
